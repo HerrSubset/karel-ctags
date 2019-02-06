@@ -1,0 +1,7 @@
+--langdef=Karel
+--map-Karel=+.kl
+
+--regex-Karel=/^[ \t]*ROUTINE[ \t]+([a-zA-Z1-9]+)(\(.*\))?[ \t]*(: \w+)?$/\1/r,routine/
+--regex-Karel=/^[ \t]*PROGRAM[ \t]+([a-zA-Z1-9_]+)/\1/p,program/
+--regex-karel=/^[ \t]*([a-zA-Z1-9]+)[ \t)+FROM[ \t]+[a-zA-Z1-9_]+[ \t]+=[ \t]+STRUCTURE/\1/s,structure/
+--regex-karel=/^[ \t]*([A-Z_]+)[ \t]+=[ \t]+/\1/c,constant/
